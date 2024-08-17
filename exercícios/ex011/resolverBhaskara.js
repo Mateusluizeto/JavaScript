@@ -13,4 +13,3 @@ function calcularRaizQuadrada(base) {
 }
 
 resolverBhaskara(2, 3, -2)
-

@@ -1,3 +1,6 @@
+// MÉTODOS SÃO FUNÇÕES QUE ESTÃO ASSOCIADAS A OBJETOS
+
+
 let casa = {
     cor: 'white',
     sala: 15, /*Tamanho em metros quadrados*/
@@ -10,7 +13,7 @@ let casa = {
     return tamanhoTotal
     }
 }
-casa.calcularTamanhoDaCasaEmM2()
+casa.calcularTamanhoDaCasaEmM2() // ISSO É UM MÉTODO
 
 /**********************************************************************************************************************************************/
 

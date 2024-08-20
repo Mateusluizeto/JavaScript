@@ -5,7 +5,7 @@ function notas(a, b, c) {
    console.log(`A média desse aluno é ${Number.parseInt(mediaNotas)}`)
 }
 
-notas(9, 9, 4)
+notas(9, 9, 4) // Valor que o paramentro vai ter ao ser executado
 
 /*EXERCICIO 2*/
 console.log("Resultado do exercício 2:")
@@ -20,7 +20,7 @@ function mediaProvaFinal(a, b, c, notaFinal) {
     console.log(`A média final desse aluno é ${mediaFinal}`)
 }
 
-mediaProvaFinal(4, 5, 2, 10)
+mediaProvaFinal(4, 5, 2, 10) // Valor que o paramentro vai ter ao ser executado
 
 /*EXERCICIO 3*/
 console.log("Resultado do exercício 3:")
@@ -29,7 +29,7 @@ function converterParaFarenheit(temperaturaCelsius) {
     console.log(`A temperatura em Farenheit é ${tempFarenheit}F`)
 }
 
-converterParaFarenheit(40)
+converterParaFarenheit(40) // Valor que o paramentro vai ter ao ser executado
 
 /*EXERCICIO 4*/
 console.log("Resultado do exercício 4:")
@@ -38,4 +38,4 @@ function pagarImposto(produto) {
     console.log(`O valor a ser pago é ${valorComimposto}R$`)
 }
 
-pagarImposto(50)
+pagarImposto(50) // Valor que o paramentro vai ter ao ser executado

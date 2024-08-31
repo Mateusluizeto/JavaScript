@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ECE9FD;
+    padding: 6.0rem 2.3rem 6.6rem;
+    font-size: 1.6rem;
+    font-family: 'Epilogue', sans-serif;
+}
+
+main{
+    max-width: 33.0rem;
+    margin: auto;
+}
+
+main > p:first-child { /*Essa paseudo-classe pega o primeiro elemento p do main*/
+    color: #7158EF;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 3.2rem;
+    margin-bottom: 1.7rem;
+}
+
+h1{
+    font-weight: 8001;
+    font-size: 4.0rem;
+    line-height: 4.8rem;
+    color: #090039;
+    margin-bottom: 1.5rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+h1 + p { /*Dessa forma nos vamos pegar o p que tem anteriormente ao h1*/
+    color: rgba(10, 0, 57, 0.64);
+    line-height: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+
+a{
+    color: #090039;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7158EF;
+}
+
+ul{
+    margin-top: 7.2rem;
+}   
+
+ul li {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #090039;
+    max-width: 25.7rem;
+    display: flex;
+    align-items: center;
+    gap: 3.8rem;
+}
+
+ul li span{
+    font-weight: 800;
+    font-size: 7.2rem;
+    line-height: 8.0rem;
+    letter-spacing: -2px;
+    color: #090039;
+}
+
+ul li + li { /*Pegando todo li que tem anterios a ale um li (ou seja o li do meio)*/
+    margin-top: 3.2rem;
+}
+
+@media screen and (min-width: 700px) {
+
+    body{
+        padding-top: 8rem;
+    }
+    main{
+        max-width: 1020px;
+        display: flex;
+        gap: 10rem;
+    }
+
+    main > div {
+        max-width: 484px;
+    }
+    
+    ul li {
+        gap: 5.3rem;
+        max-width: 450px;
+        align-items: center;
+    }
+
+   
+}

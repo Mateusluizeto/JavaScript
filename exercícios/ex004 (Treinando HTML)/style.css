@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --ff-heading: 'Epilogue', sans-serif;
+    --ff-texting: 'Open sans', sans-serif;
+
+    --hue: 250;
+    --bg-primary: hsl(var(--hue), 22%, 20%);
+    --fc-primary: hsl(var(--hue), 0%, 100%);
+    --fc-secondary: hsl(var(--hue), 50%, 80%);
+    --fc-secondary-dark: hsl(var(--hue), 100%, 11%, 1);
+    --fs-body: 1.6rem;
+    --fs-heading: 4rem;
+
+}
+
+body{
+    font-family: var(--ff-texting);
+    background-color: var(--bg-primary);
+    color: var(--fc-primary);
+    font-size: var(--fs-body);
+}
+
+.page{
+    max-width: 33rem;
+    margin: auto;
+}
+
+@media screen and (min-width: 930px) {
+    
+
+    main{
+        grid-template-areas: "A B B"
+        "C C D";
+    }
+
+    main div:nth-child(1) {
+        grid-area: A;     
+    }
+
+    main div:nth-child(2) {
+        grid-area: B;
+    }
+
+    main div:nth-child(3) {
+        grid-area: C;
+    }
+
+    main div:nth-child(4) {
+        grid-area: D;
+    }
+
+}
+
+@media screen and (min-width: 700px){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    :root{
+        --fs-heading: 5.6rem
+    }
+    
+    .page{
+        max-width: 117rem;
+        padding: 0 5rem;
+    }
+}
+
+header{
+    margin: 10rem 0 8rem;
+    font-family: var(--ff-heading);
+    text-align: center;
+
+    /*Configurações para a animação*/
+    animation-name: topdown;
+    animation-duration: 700ms;
+}
+
+header > p {
+    color: var(--fc-secondary);
+    text-transform: uppercase;
+    line-height: 3.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 1.7rem;
+    font-weight: 400;
+}
+
+header h1{
+    font-weight: 800;
+    font-size: var(--fs-heading);
+    line-height: 4.8rem;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    animation: downtop 700ms/*Tempo de execução*/ 350ms/*Delay que ele vai ter para iniciar*/ reverse backwards/*Nesse caso ele ta fazendo com que nao fique aparecendo o elemento durante o delay de 350ms, ele vai ficar invisivel durante esse periodo*/;
+}
+
+.card{
+    position: relative;
+    font-family: var(--ff-heading);
+}
+
+.card img{
+    height: 41.6rem;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: all 200ms;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.card h2 {
+    position: absolute;
+    bottom: 5.2rem;
+    left: 2.8rem;
+    font-size: 4rem;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+.card h2 span{
+    border-radius: 2rem;
+    background-color: var(--fc-primary);
+    font-size: var(--fs-body);
+    font-weight: 400;
+    color: var(--fc-secondary-dark);
+    padding: 0 1.6rem;
+    height: 3.8rem;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content; /*Assim a largura vai se encaichar de acordo com o tamanho do conteúdo*/
+}
+
+@keyframes topdown{ /*A animação*/
+    0%{
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+  
+@keyframes downtop{
+   100%{
+    opacity: 0;
+    transform: translateY(15px);
+   }
+}

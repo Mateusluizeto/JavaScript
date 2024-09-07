@@ -1,13 +1,9 @@
-/*
-Prototype
+// Manipulando Arrays 
 
-*prototype-based language
-*prototype chain
-*__proto__
-*/
+// Transformar uma cadeia de caracteres em um array
 
-let nome = 'Mateus'
-console.log(nome.length) // Resultado: 6
+let word = 'Manipulação'
+console.log(Array.from(word)) // Esse serve para tranformar cada caractere em um espaço separado no array
 
-let numero = 12;
-console.log(numero.toString() , typeof(numero))
+
+// Resultado:  ['M', 'a', 'n', 'i', 'p', 'u', 'l', 'a', 'ç', 'ã', 'o']

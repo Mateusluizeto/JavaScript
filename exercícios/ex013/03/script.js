@@ -11,11 +11,13 @@
 */
 
     const nome = window.prompt("Qual é o seu nome?")
+
     let bim1 = Number(window.prompt(`${nome}, qual foi sua nota no primeiro bimestre?`))
     let bim2 = Number(window.prompt(`${nome}, qual foi sua nota no segundo bimestre?`))
     let bim3 = Number(window.prompt(`${nome}, qual foi sua nota no terceiro bimestre?`))
     let soma = bim1 + bim2 + bim3
     let media = soma / 3
+    
     if(media >= 6){
         window.alert(`PARABENS ${nome}, sua média é: ${media.toFixed(1)}`)
     } else {

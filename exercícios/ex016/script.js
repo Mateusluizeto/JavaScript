@@ -30,6 +30,29 @@ while(option != 3){
 3. Sair do programa 
 `));
 
+    switch(option){
+        case 1: 
+        let item = window.prompt("Digite o nome do item:")
+        items.push(item)
+            break // para mostrar que o caso 1 acabou
+        case 2: 
+        
+        if(items.length == 0){
+            window.alert("Não existem itens cadastrados")
+        } else{
+            window.alert(items) // Vai mostrar quais itens nós cadastramos
+        }
+            break // Para mostrar que o caso 2 acabou
+        case 3:
+            window.alert("Tchau")
+            break
+        default: // Vai fazer isso se não tiver 1 nem 2
+        window.alert("Opção inválida, tente novamente")
+          
+    }
+}
+
+    /* MESMO CÓGIDO ACIMA POREM USANDO IF ELSE
     
     if(option == 1){ // Cadastrar um item na lista
         items[position] = window.prompt("Digite o nome do item:")
@@ -49,4 +72,4 @@ while(option != 3){
     console.log(items, option)
     position++
 }
-
+*/

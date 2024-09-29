@@ -21,3 +21,9 @@ Perguntas a serem feitas:
 
 6. Qual é a saída, ou quais os dados de saída, esperada? (outputs)
     - Guardar os itens em uma lista
+
+# Ferramentas da linguagem que abordaremos
+    [] loop while
+    [] arrays e funções de arrays
+    [] condicionais switch e if/else
+    [] template literals (strings)

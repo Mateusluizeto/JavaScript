@@ -7,6 +7,8 @@
   Onde X é o nome do paciente e Y é o IMC desse paciente
 
   Crie um função para fazer o calculo de IMC
+
+  Calculo de IMC = peso / (altura * altura)
 */
 
 const patients = [ // Criando objetos dentro de arrays 
@@ -30,10 +32,14 @@ const patients = [ // Criando objetos dentro de arrays
     } ,
 ]
 
-let patientsNames = []
-
-for(let index = 0; index < patients.length; index++) {
-    patientsNames[index] = patients[index].name
+function printPatientIMC(patients) {
+    alert(`Paciente ${patients.name} possui o IMC de: ${(patients.weight / (patients.height / 100) ** 2).toFixed(2)}`)    // Calculo de IMC = peso / (altura * altura) / O dividido por 100 senve para arrendondar o número para ele não ficar com zeros quebrados / O toFixed serve para deixar com 2 casas decimais depois do ponto
+    
 }
 
-alert(patientsNames)
+for(let patient = 0; patient >= 0; patient++){
+    printPatientIMC(patients[patient]) // variavel de controle
+}
+
+
+

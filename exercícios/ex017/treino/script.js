@@ -1,14 +1,13 @@
-const nome = window.prompt('Qual é o seu nome?')
-let bim1 = Number(window.prompt(`${nome}, qual é sua nota do primeiro bimestre?`))
-let bim2 = Number(window.prompt(`${nome}, qual é sua nota do segundo bimestre?`))
-let bim3 = Number(window.prompt(`${nome}, qual é sua nota do terceiro bimestre?`))
-let soma = bim1 + bim2 + bim3
-let media = soma / 3
+/*
+    Capture 10 itens para compor a lista de um supermercado.
 
-if(media >= 6) {
-    window.alert(`Sua média é ${media}, Parabens voce passou!!`)
-} else {
-    window.alert(`Sua média é ${media}, Voce precisa estudar mais ):`)
+    Após capturar os 10 itens, imprima-os separando por vírgula.
+*/
+let itens = []
+let control = 0
+while(control < 10) {
+  itens[control] = window.prompt(`Qual é o item ${control + 1}?`)
+  control++
 }
 
-console.log(bim1, bim2, bim3, soma, media)
+window.alert(itens)

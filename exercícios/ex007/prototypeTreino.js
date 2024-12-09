@@ -18,5 +18,5 @@ console.log(separarPorUnderline)
 console.log(arra.indexOf('Mateus')) // ver em qual posição do array esta o elemento 'Mateus'
 
 let verificarSeTemOElemento = 'Eu gosto de andar de'
-console.log(verificarSeTemOElemento.includes('gosto')) // Aqui ele está vrificando se tem o elemento 'gosto' na minha variável
+console.log(verificarSeTemOElemento.includes('gosto')) // Aqui ele está verificando se tem o elemento 'gosto' na minha variável
 //Resultado: true

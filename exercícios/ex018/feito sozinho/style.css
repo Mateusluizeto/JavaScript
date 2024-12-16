@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.hide{
+    display: none;
+}
+
+body{
+    background-color: #A4C8FD;
+}
+
+main{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h1 , p{
+     font-family: 'Montserrat', sans-serif;
+     color: #34355B;
+     font-size: 15px;
+}
+
+h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+p{
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+form{
+    display: flex;
+    justify-content: center ;
+}
+
+input, button{
+    border: none;
+    padding: 15px;
+    width: 75px;
+    text-align: center;
+    
+}
+
+input{
+    background-color: #DCE2E9;
+    border-radius: 8px 0px 0px 8px;
+}
+
+button{
+    background-color: #7979ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-family: 'DM sans', sans-serif;
+    font-weight: normal;
+}
+
+#jogarNovamente{
+ width: 130px;
+ padding: 9px;
+ border-radius: 5px;
+}
